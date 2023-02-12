@@ -820,7 +820,7 @@ func TestActivityType(t *testing.T) {
 	}
 
 	// other
-	ty := ActivityType(100)
+	ty := ActivityType("100")
 	if id := ty.Id(); id != 0 {
 		t.Errorf("activity type id incorrect, got %v", id)
 	}
